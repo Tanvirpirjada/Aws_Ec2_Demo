@@ -54,28 +54,28 @@ step 6: Now you are in the machine which u make in ec2. Here u have to install m
     sudo apt install openjdk-16-jre-headless  
     sudo apt install openjdk-8-jre-headless 
     
-  step 7:  after installing mysql u have to do sum changes so go to this files etc/mysql/mysql.conf.d/mysqld.cnf
-     go in last file using command sudo nano filename(mysqld.cnf)
-     and change binding to 0.0.0.0
+step 7:  after installing mysql u have to do sum changes so go to this files etc/mysql/mysql.conf.d/mysqld.cnf
+go in last file using command sudo nano filename(mysqld.cnf)
+and change binding to 0.0.0.0
      
-     Step 8 :  now login in mysql root user and creat user using same lines which we use in out lacl database to create user
+step 8 :  now login in mysql root user and creat user using same lines which we use in out lacl database to create user
      
-     after that try to ligi  with username user 
-     and then create database with the name which u give in application properties in  application
+after that try to ligi  with username user
+and then create database with the name which u give in application properties in  application
      
-     step 9 now create jar after wriet currect info in application .properties and then go to the ec2
-     in terminus)
+step 9 now create jar after wriet currect info in application .properties and then go to the ec2
+in terminus)
      
-     step 10 : now go to the sftp option in terminus and paste that jar from your local to ec2 machin
+step 10 : now go to the sftp option in terminus and paste that jar from your local to ec2 machin
      
-     step 11: after pasting we have to give permission to  jar so go on location of jar and write this command sudo chmod 777 jarname
+step 11: after pasting we have to give permission to  jar so go on location of jar and write this command sudo chmod 777 jarname
      
      
-     step 12 : now we have to create a service so got  into etc/systemd/system
-     and now create new service useing key sudo nano servicename 
-     ans write this
+step 12 : now we have to create a service so got  into etc/systemd/system
+and now create new service useing key sudo nano servicename 
+ans write this
      
-     [Unit]
+[Unit]
 Description=Spring boot deployment
 After=syslog.target
 
