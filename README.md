@@ -54,7 +54,7 @@ step 6: Now you are in the machine which u make in ec2. Here u have to install m
     sudo apt install openjdk-16-jre-headless  
     sudo apt install openjdk-8-jre-headless 
     
-step 7:  after installing mysql u have to do sum changes so go to this files etc/mysql/mysql.conf.d/mysqld.cnf
+step 7:  after installing mysql u have to do some changes so go to this files etc/mysql/mysql.conf.d/mysqld.cnf
 go in last file using command sudo nano filename(mysqld.cnf)
 and change binding to 0.0.0.0
      
